@@ -1,0 +1,31 @@
+extends layout
+
+block content
+
+  - var obj = {surname: "Hornak", name: "Tomas"};
+
+  div#login.container.vertical-center
+    if user
+      div.row.form-row
+        div.logged-in
+          h4 You are logged in as
+          h2= user
+          
+    else
+      div.row.form-row
+        div.form-signin
+          h2.form-signin-heading Please sign in
+          label.sr-only(for='userName') DB username
+          input#userName.form-control.wait(name='userName' type='text' placeholder='DB username' required autofocus)
+          label.sr-only(for='inputPassword') Password
+          input#inputPassword.form-control.wait(name='inputPassword' type='password' placeholder='Password' required)
+          br
+          button.btn.btn-lg.btn-primary.btn-block.wait#signin-btn Sign in
+        div.info-panel
+      
+      
+  
+  link(rel='stylesheet', href='css/input.css')
+  script(src='javascripts/jquery-3.2.0.js')
+  script(src='javascripts/login.js')
+  

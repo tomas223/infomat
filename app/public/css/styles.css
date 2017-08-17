@@ -1,0 +1,88 @@
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  padding-top: 5px;
+}
+h3 small {
+  font-size: 100%;
+}
+
+
+.response {
+/*  padding-top: 15px;*/
+}
+
+#controlPanel button {
+  margin: 6px 6px 0 2px;
+}
+
+.form-panel {
+  padding: 0 0 8px;
+}
+
+
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+#getDataBtn {
+  margin: 0;
+}
+#inputPanel > .form-group {
+  margin: 6px 6px 0 2px;
+/*  padding: 4px 2px;*/
+}
+
+.checkbox-inline {
+  padding-left: 22px;
+  margin: 6px 6px 0 2px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #c5c5c5;
+/*  font-weight: 600;*/
+}
+.checkbox-inline.disabled {
+  cursor: default;
+  border-color: #e5e5e5;
+}
+
+.checkbox-inline.active {
+  color: #333;
+}
+.checkbox-inline.active:hover {
+  background-color: #f1f1f1;
+  border-color: #c5c5c5;
+}
+
+
+
+.checkbox-inline.checked {
+  background-color: #333;
+  color: #ebebeb;
+  font-weight: 600;
+}
+.checkbox-inline.active.checked:hover {
+  background-color: #333;
+  color: #ebebeb;
+}
+
+.checkbox-inline span {
+  display: inline-block;
+  padding: 3px 8px;
+}
+
+.checkbox-inline input[type="checkbox"] {
+  margin: 7px 0 0 -13px;
+}
+
+.checkbox-inline + .checkbox-inline {
+  margin: 6px 6px 0 2px;
+}
+
+#inputText {
+  width: 250px;
+  margin-right: 8px;
+}

@@ -1,0 +1,33 @@
+extends layout
+
+block content
+
+  - var items = JSON.parse(webData);
+  - var obj = {surname: "Hornak", name: "Tomas"};
+
+    div#controlPanel
+      form
+        div#queries.form-panel
+          each val, index in items.queries
+            label.checkbox-inline.disabled(id=index)
+              input(type='checkbox' value=index disabled)
+              span= val
+
+        div#toggleButtons.form-panel
+          each val, index in items.fields
+            button.btn.btn-info.btn-lg(type="button" id=val.id data-options=val.options.join(" ")) #{val.label}
+
+        div#inputPanel.form-inline.form-panel
+          div.form-group
+            input#inputText.form-control(type='text' placeholder='Choose a button' name='inputText')
+          div.form-group
+            button#getDataBtn.btn.btn-success(type='button') Get results!
+          
+
+    div#messagePanel
+    div#resultPanel
+  
+  link(rel='stylesheet', href='css/styles.css')
+  script(src='javascripts/jquery-3.2.0.js')
+  script(src='javascripts/script.js')
+  

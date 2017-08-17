@@ -1,0 +1,36 @@
+{
+	"ban":
+	{
+		"id": "ban",
+		"label": "BAN",
+		"dataType": "string",
+		"minLength": 2,
+		"maxLength": 12
+	},
+	
+	"contractIdSprint":
+	{
+		"id": "contractSprintCode",
+		"label": "Contract Sprint Code",
+		"dataType": "string",
+		"minLength": 2,
+		"maxLength": 15
+	},
+	"contractCode":
+	{
+		"id": "contractCode",
+		"label": "Contract Code",
+		"dataType": "string",
+		"minLength": 2,
+		"maxLength": 12
+	},
+	
+	"other":
+	{
+		"id": "other",
+		"label": "Other",
+		"dataType": "string",
+		"minLength": 2,
+		"maxLength": 20
+	}
+}

@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title #{title}
+    meta(name='author', content='Tomas Hornak')
+    meta(name='description', content='US AppSupp investigation tool')
+    
+    link(rel='stylesheet', href='css/bootstrap.css')
+  body
+    div.container
+      div.navbar.navbar-default
+        div.container-fluid
+          div.navbar-header
+            a.navbar-brand(href='./') Infomat
+          //div.navbar-default
+          div.nav.navbar-nav.navbar-right
+              if user
+                li
+                  a= user
+              li
+                if user
+                  a(href='./logout') Logout
+                else
+                  a Login
+    
+      block content

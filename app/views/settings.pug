@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+  - var fConfig = fieldsConfig;
+
+  div.container
+    div#heading.page-header
+      h1 #{title}
+    div#fieldSettings
+      form
+        each val, index in fConfig
+          div.singleField(id=val.id)
+            div.input-group
+              span.input-group-addon= Ahojky
+              input.form-control(type='text' )
+    
+      div= fieldsConfig
+      div= fConfig
+    
+  
+  script(src='javascripts/jquery-3.2.0.js')
